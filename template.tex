@@ -1,0 +1,57 @@
+\documentclass[uplatex]{jsarticle}
+%TODO: change this to uplatex (https://texwiki.texjp.org/?upTeX%2CupLaTeX)
+\usepackage[utf8]{inputenc}
+
+\usepackage{longtable,booktabs}
+% table support
+
+\usepackage{amsmath}
+% AMS-LaTeX
+
+\usepackage{gensymb}
+% \degree, among other symbols
+
+\usepackage{newtxtext,newtxmath}
+%\usepackage{newtxtext}
+
+\usepackage{zi4}
+% inconsolata font
+
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+% font: T1+TS1
+
+%\usepackage[dvipdfmx,hiresbb]{graphicx}
+%\usepackage[normalem]{ulem}
+
+$if(title)$
+\title{$title$}
+$endif$
+\author{$for(author)$$author$$sep$\\$endfor$}
+$if(date)$
+\date{$date$}
+$endif$
+
+\begin{document}
+
+$if(title)$
+\maketitle
+$endif$
+
+$if(toc)$
+\tableofcontents
+$endif$
+
+$if(alignment)$
+\begin{$alignment$}
+$endif$
+
+% body goes here
+$body$
+
+%$if(alignment)$
+\end{$alignment$}
+$endif$
+
+\end{document}
+
