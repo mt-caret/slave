@@ -26,4 +26,5 @@ $ ./watch.sh content # and start slaving away
 - [ ] improve template.tex
 - [ ] showcase functionality with content.md
 - [ ] add bibliography support [(with biber?)](http://konn-san.com/prog/why-not-latexmk.html)
+- [ ] document/comment everything
 
