@@ -1,5 +1,5 @@
-$latex = 'uplatex -synctex=1 -kanji=utf8 %O %S';
-$bibtex = 'pbibtex %O %B';
+$latex = 'uplatex -synctex=1 -halt-on-error -kanji=utf8 %O %S';
+$bibtex = 'upbibtex -kanji=utf8 %O %B';
 $dvipdf = 'dvipdfmx %O -o %D %S';
 $makeindex = 'mendex %O -o %D %S';
 $max_repeat = 10;
